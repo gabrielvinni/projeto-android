@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Quicksand:wght@500;700&display=swap');
+
 @font-face {
     font-family: "android";
     src: url("../fontes/idroid.otf") format('opentype');
@@ -14,21 +16,22 @@
 }
 
 :root {
-    --cor0: #b7f7d4;
-    --cor1: #3EDE86;
-    --cor2: #30AB67;
-    --cor3: #207245;
-    --cor4: #1b5234;
+    --cor0: #83E1AD;
+    --cor1: #3EDB84;
+    --cor2: #2FA866;
+    --cor3: #1A5C37;
+    --cor4: #355C47;
     --cor5: #133a24;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --font-destaque: 'Bebas Neue', cursive;
     --font-android: 'android', cursive;
+    --font-boa: 'PT Sans Caption', sans-serif;
+    --outra-font-boa: 'Quicksand', sans-serif;
 }
 
 body {
-    background: rgb(252, 247, 205);
-    font-family: var(--fonte-padrao);
+    font-family: var(--outra-font-boa);
 }
 
 a.externo::after {
@@ -36,7 +39,7 @@ a.externo::after {
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    background-color: var(--cor2);
     color: white;
     text-align: center;
     min-height: 150px;
@@ -44,7 +47,7 @@ header{
 }
 
 header > h1 {
-    font-family: var(--font-destaque);
+    font-family: var(--font-boa);
     margin-bottom: 15px;
     font-size: 3em;
     padding: 0px 10px 0px 10px;
@@ -60,7 +63,7 @@ header > p {
 }
 
 nav {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     padding: 10px;
     box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.219);
 }
@@ -101,7 +104,7 @@ main img.pequena {
 
 main h1 {
     font-family: var(--font-android);
-    color: var(--cor4);
+    color: var(--cor2);   
 }
 
 main h2 {
@@ -133,7 +136,7 @@ main strong {
 
 
 div.video {
-    background-color: var(--cor5);
+    background-color: #3edb84;
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 56.5%;
